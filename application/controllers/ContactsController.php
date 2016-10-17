@@ -1,10 +1,10 @@
 <?php
-class IndexController implements IController {
+class ContactsController implements IController {
   public function indexAction() {
     $fc = FrontController::getInstance();
     //Add
     $template_view = 'template_view.php';
-    $content_view = 'index_view.php';
+    $content_view = 'contacts_view.php';
 
     $view = new View();
 

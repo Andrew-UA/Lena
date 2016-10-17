@@ -14,8 +14,8 @@ class FrontController{
       $splits = explode('/', trim($request, '/'));
 
       //Controller
-
       $this->_controller = !empty($splits[0]) ? ucfirst($splits[0]).'Controller' : 'IndexController';
+      //echo $this->_controller;
 
       //Action
       $this->_action = !empty($splits[1]) ? $split[1].'Action' : 'indexAction';
@@ -37,8 +37,9 @@ class FrontController{
     }
 
     public function route(){
-      if(class_exists($this->getController(), false)){
-        echo 'It is';
+      //echo ROOT.'/application/controllers/'.$this->getController().'.php'.'<br>';
+      //echo __DIR__.'/'.$this->getController().'.php';
+      if(file_exists(ROOT.'/application/controllers/'.$this->getController().'.php')){
         $rc = new ReflectionClass($this->getController());
         //00:35
         if($rc->implementsInterface('IController')){
@@ -46,15 +47,18 @@ class FrontController{
             $controller = $rc->newInstance();
             $method = $rc->getMethod($this->getAction());
             $method->invoke($controller);
+            /*$controllerName = $this->getController();
+            $controller = new $controllerName;
+            $method = $this->getAction();
+            $controller->$method();*/
           } else {
             throw new Exception("Action");
           }
-
         } else {
           throw new Exception("Interface");
         }
       } else {
-        echo 'It isnt';
+        //echo $this->getController();
         throw new Exception("Controller");
       }
     }

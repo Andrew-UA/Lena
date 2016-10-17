@@ -1,10 +1,10 @@
 <?php
-class IndexController implements IController {
+class GalleryController implements IController {
   public function indexAction() {
     $fc = FrontController::getInstance();
     //Add
     $template_view = 'template_view.php';
-    $content_view = 'index_view.php';
+    $content_view = 'gallery_view.php';
 
     $view = new View();
 

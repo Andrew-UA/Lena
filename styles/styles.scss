@@ -23,7 +23,7 @@ h2 {
 	margin-top: 10px;
 	background-color: #EBE8E3;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 5px;
 	border-color: #F2CFB9;
 	border-radius: 14px;
 }
@@ -134,13 +134,16 @@ h2 {
 .article__content {
 	display: flex;
 	justify-content: flex-start;
+	height: auto;
+}
+.article__content_preview{
 	height: 150px;
 }
 
 .article__image {}
 
 .article__text {
-	height: 145px;
+	height: auto;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: justify;
@@ -149,7 +152,7 @@ h2 {
 .sidebar {
 	font-size: 16px;
 	width: 32%;
-	height: 1000px;
+	height: auto;
 	//background-color: #965248;
 	display: inline-block;
 	vertical-align: top;
@@ -223,7 +226,7 @@ h2 {
 	border-style: solid;
 	border-width: thin;
 	border-color: #eab190;
-	box-shadow: 0px 0px 4px 2px #959290;
+	box-shadow: 0px 0px 2px 1px #959290;
 	text-align: center;
 	font-size: 14px;
 	font-family: Arial, Helvetica, Sans-Serif;
