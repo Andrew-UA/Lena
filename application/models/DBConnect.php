@@ -9,17 +9,15 @@ Class DBConnect{
     }
 
   private function __construct() {
-    $db = new Datebase;
-
-    $dsn = "mysql:host=$db->getHost;dbname=$db->getName;charset=$db->getCharset";
+    //include_once ROOT.'/application/configuration/Database_1.php';
+    $db = new Database();
+    $dsn = "mysql:host=".$db->getHost().";dbname=".$db->getName().";charset=".$db->getCharset();
     $opt = array(
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
-
-    $_pdo = new PDO($dsn, $db->getLoggin(), $db->getPassword(), $opt);
+    $this->_pdo = new PDO($dsn, $db->getLogin(), $db->getPassword(), $opt);
   }
-
-  public function getPDO(){
-    return $_pdo;
+  public function getPDO() {
+    return $this->_pdo;
   }
 }
