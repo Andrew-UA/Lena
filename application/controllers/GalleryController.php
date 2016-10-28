@@ -3,7 +3,7 @@ class GalleryController implements IController {
   public function indexAction() {
     $fc = FrontController::getInstance();
     //Add
-    $template_view = 'template_view.php';
+    $template_view = 'template_gallery_view.php';
     $content_view = 'gallery_view.php';
 
     $view = new View();

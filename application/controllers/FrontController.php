@@ -9,6 +9,7 @@ class FrontController{
       return self::$_instance;
     }
 
+
     private function __construct(){
       $request = $_SERVER['REQUEST_URI'];
       $splits = explode('/', trim($request, '/'));
@@ -18,21 +19,24 @@ class FrontController{
       //echo $this->_controller;
 
       //Action
-      $this->_action = !empty($splits[1]) ? $split[1].'Action' : 'indexAction';
+      $this->_action = !empty($splits[1]) ? $splits[1].'Action' : 'indexAction';
 
       //Parameters chekking
       if(!empty($splits[2])){
         $key = $values = [];
-        for ($i=2, $cnt = count($splits); $i<$cnt; $i++) {
-          if($i % 2 == 0){
+        for ($i = 2, $cnt = count($splits); $i < $cnt; $i++) {
+          //echo $splits[$i];
+          if( $i % 2 == 0){
             //even = key (parameters)
             $keys[] = $splits[$i];
           } else {
             //odd = value (parameters)
-            $values = $splits[$i];
+            $values[]= $splits[$i];
           }
-          $this->_params = array_combine($keys, $values);
         }
+        //print_r ($keys);
+        //print_r ($values);
+        $this->_params = array_combine($keys, $values);
       }
     }
 

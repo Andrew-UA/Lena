@@ -8,10 +8,12 @@ class IndexController implements IController {
 
     $model = new ModelIndex();
     $data = $model->getArticles();
+    $pages = $model->getCountOfArticles();
+    $pages['current_page'] = 1;
     $view = new View();
-    $result = $view->render($template_view, $content_view, $data);
-    print_r ($data);
-
+    $result = $view->render($template_view, $content_view, $data, $pages);
+    //print_r ($data);
     $fc->setBody($result);
   }
+  
 }

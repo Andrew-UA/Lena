@@ -2,17 +2,70 @@
  <h2 class="article__title">
      Галерея
  </h2>
- 
- <div class="article__content">
-   <div class="article__image">
-     <img src="/images/content/111.png" alt="Picture">
-   </div>
-   <div class="article__text">
-     <p>Найбільша відома карликова планета Сонячної системи та найбільший транснептуновий об'єкт, перший відкритий об'єкт поясу Койпера. Дев'яте за розміром та десяте за масою небесне тіло, яке обертається навколо Сонця (без урахування супутників планет).
-       Як і більшість тіл у поясі Койпера, Плутон складається здебільшого з каменю й льоду і є відносно малим (діаметр близько 2374 км). За масою він поступається Місяцю вп'ятеро, а за об'ємом — утричі. Орбіта Плутона має великий ексцентриситет (0,25,
-       тобто, вона доволі витягнута) і значний нахил до площини екліптики (17,1°). Через витягнутість орбіти Плутон то наближається до Сонця на відстань 29,6 а.о. (4,4 ​​млрд км) і опиняється ближче, ніж Нептун, то віддаляється на 49,3 а.о. (7,4 млрд
-       км). Плутон перебуває в стабільному орбітальному резонансі з Нептуном, тому їхнє зіткнення виключене.</p>
-   </div>
+
+ <div class="gallery">
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/1.png" >
+      <img class="gallery__img" src="/images/content/gallery/1024/1.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/2.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/2.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/3.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/3.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/4.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/4.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/5.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/5.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/6.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/6.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/7.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/7.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/8.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/8.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/9.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/9.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/2.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/2.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+    <a class="fancybox" data-fancybox-group="gallery" href="/images/content/gallery/1024/1.png" title="Lorem ipsum dolor sit amet">
+      <img class="gallery__img" src="/images/content/gallery/1024/1.png" alt="" />
+    </a>
+  </div>
+  <div class="gallery__picture">
+
+  </div>
+</div>
+
+
+
  </div>
 
 </div>

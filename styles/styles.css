@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -48,22 +49,29 @@ h2 {
 }
 
 .main-menu__element {
-  display: block;
   background: linear-gradient(to bottom, #e3c0d8 0%, #f2e2ee 87%, #ead0e2 100%);
+  display: block;
   box-shadow: 0 0 4px 0.5px #e3c0d8;
-  border-radius: 5px 5px 0 0;
   list-style-type: none;
   margin-left: 10px;
-  padding: 7px;
 }
 
 .main-menu__link {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  padding: 7px;
   font-family: Arial, Helvetica, Sans-Serif;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: #7D365E;
+}
+
+.main-menu__link:hover {
+  background: none;
+  background-color: #622f63;
+  color: #e3c0d8;
 }
 
 .header {
@@ -107,6 +115,10 @@ h2 {
   vertical-align: top;
 }
 
+.content_gallery {
+  width: 98%;
+}
+
 .article {
   margin: 0 0 10px;
   padding: 10px;
@@ -137,10 +149,98 @@ h2 {
 }
 
 .article__text {
+  font-size: 14px;
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-indent: 15px;
   height: auto;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
+}
+
+.article__link {
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: underline;
+  color: #757575;
+}
+
+.article__link:hover {
+  text-decoration: none;
+  color: #C47027;
+}
+
+.article__link:visited {
+  text-decoration: none;
+  color: #6E305E;
+}
+
+.article__navi {
+  margin-bottom: 10px;
+}
+
+.article__page {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 4px;
+  font-weight: bold;
+}
+
+.article__move-link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #803b68;
+}
+
+.article__move-link:active {
+  color: #7906a8;
+}
+
+.article__move-link_disable {
+  pointer-events: none;
+  /* делаем ссылку некликабельной */
+  cursor: default;
+  /* устанавливаем курсор в виде стрелки */
+  color: #999;
+  /* цвет текста для нективной ссылки */
+}
+
+.gallery {
+  margin: 10px;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery__picture {
+  margin: 5px;
+  border-color: red;
+  border-width: medium;
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery__img:hover {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 105%;
+  height: 105%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .sidebar {
@@ -160,7 +260,7 @@ h2 {
   border-width: 0.5px;
   border-radius: 8px;
   height: auto;
-  box-shadow: 0px 0px 5px 0px #ecd5e5 inset;
+  box-shadow: 0 0 5px 0 #ecd5e5 inset;
 }
 
 .sidebar__title {
@@ -170,10 +270,7 @@ h2 {
 }
 
 .sidebar__title-ico {
-  margin-left: 7px;
-  margin-top: 7px;
-  margin-bottom: 8px;
-  margin-right: 4px;
+  margin: 7px 4px 8px 7px;
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -220,7 +317,7 @@ h2 {
   border-style: solid;
   border-width: thin;
   border-color: #eab190;
-  box-shadow: 0px 0px 2px 1px #959290;
+  box-shadow: 0 0 2px 1px #959290;
   text-align: center;
   font-size: 14px;
   font-family: Arial, Helvetica, Sans-Serif;
@@ -239,14 +336,30 @@ h2 {
 }
 
 .mini-gallery__picture {
+  position: relative;
   height: 75px;
   width: 75px;
   border-radius: 6px;
-  overflow: hidden;
-  margin: 5px;
-  margin-bottom: 15px;
-  box-shadow: 0px 0px 5px 5px #8f858b;
+  margin: 5px 5px 15px;
+  box-shadow: 0 0 5px 5px #8f858b;
   background-color: yellow;
+}
+
+.mini-gallery__picture-img {
+  border-radius: 6px;
+  height: 75px;
+  width: 75px;
+}
+
+.mini-gallery__picture-img:hover {
+  border-radius: 6px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 95px;
+  width: 95px;
+  margin: 0 0 10;
+  box-shadow: 0 0 3px 3px #b19da9;
 }
 
 .footer {
@@ -274,7 +387,10 @@ h2 {
   background-color: #EBD2E3;
   border-radius: 5px;
   margin-right: 5px;
-  padding: 5px;
+}
+
+.menu__link:hover {
+  border-radius: 5px 5px 5px 5px;
 }
 
 .info {

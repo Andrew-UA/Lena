@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uK">
+<html lang="uk">
 
 <head>
 	<meta charset="UTF-8">
@@ -42,7 +42,7 @@
 								<p>Пошук</p>
 							</div>
 						</div>
-						<form class="search__form" action="" method="POST">
+						<form class="search__form" action="/search/" method="POST">
 							<input class="search__text" type="text" name="q" value="" placeholder="Введіть текст...">
 							<input class="search__submit" type="submit" name="search" value="Пошук">
 						</form>
@@ -56,33 +56,69 @@
 						</div>
 
 						<div class="mini-gallery__wrapper">
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/1.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/2.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/3.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/4.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/5.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/6.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/7.png" width="75" height="75"  alt="" />
-							</div>
-							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/8.png" width="75" height="75"  alt="" />
-							</div>
 
 							<div class="mini-gallery__picture">
-								<img src="/images/content/gallery/1.png" width="75"  height="75" alt="" />
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/2.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/3.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/4.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/5.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/6.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/7.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/8.png" alt="" />
+							</div>
+							<div class="mini-gallery__picture">
+								<img class="mini-gallery__picture-img" src="/images/content/gallery/1.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -92,10 +128,10 @@
 			<footer class="footer">
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__element"><a class="main-menu__link" href="/">Головна</a></li>
-						<li class="menu__element"><a class="main-menu__link" href="/services">Послуги</a></li>
-						<li class="menu__element"><a class="main-menu__link" href="/gallery">Мої роботи</a></li>
-						<li class="menu__element"><a class="main-menu__link" href="/contacts">Контакти</a></li>
+						<li class="menu__element"><a class="main-menu__link menu__link" href="/">Головна</a></li>
+						<li class="menu__element"><a class="main-menu__link menu__link" href="/services">Послуги</a></li>
+						<li class="menu__element"><a class="main-menu__link menu__link" href="/gallery">Мої роботи</a></li>
+						<li class="menu__element"><a class="main-menu__link menu__link" href="/contacts">Контакти</a></li>
 					</ul>
 				</nav>
 				<div class="info">
